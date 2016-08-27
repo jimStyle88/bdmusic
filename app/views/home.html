@@ -1,0 +1,12 @@
+<div class="clearfix">
+  <div class="col-xs-6" ng-repeat="song in songs">
+    <div class="thumbnail">
+      <a href="#/player/{{song.song_id}}"><img src="{{song.pic_big}}" alt="{{song.author}}"></a>
+      <div class="caption">
+        <h4>{{song.title}}</h4>
+        <p>演唱：{{song.author}}</p>
+        <p>人气：{{song.hot}}</p>
+      </div>
+    </div>
+  </div>
+</div>

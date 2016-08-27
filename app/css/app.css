@@ -1,0 +1,51 @@
+@charset "UTF-8";
+body {
+  padding-top: 60px;
+  font-family: '微软雅黑';
+}
+
+.bottom-nav {
+  padding: 2px 0;
+}
+
+.bottom-nav > div {
+  padding: 5px 0;
+  border-right: 1px solid #efefef;
+}
+
+.bottom-nav > div:last-child {
+  border: none;
+}
+
+.bottom-nav i {
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+}
+
+.bottom-nav a.active {
+  color: #f60;
+}
+
+.songs-list .badge {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.songs-list p {
+  margin: 5px 0;
+}
+
+.songs-list .media-object {
+  margin-right: 10px;
+  padding: 2px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}

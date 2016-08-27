@@ -1,0 +1,17 @@
+<ul class="list-group songs-list">
+  <li class="list-group-item" ng-repeat="song in songs">
+	<div class="media" ng-click="getDetails(song.song_id)">
+	  <div class="media-left">
+	    <a href="#/player/{{song.song_id}}">
+	      <img class="media-object" src="{{song.pic_small}}" alt="{{song.author}}">
+	    </a>
+	  </div>
+	  <div class="media-body">
+	    <h4 class="media-heading">{{song.title}}</h4>
+	    <p>演唱：{{song.author}}</p>
+	    <p>人气：{{song.hot}}</p>
+	  </div>
+	</div>
+	<span class="badge"><i class="glyphicon glyphicon-heart"></i></span>
+  </li>
+</ul>

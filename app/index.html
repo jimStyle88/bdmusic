@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bdmusic">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>首页</title>
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script src="assets/angular/angular.js"></script>
+	<script src="assets/angular-route/angular-route.js"></script>
+	<script src="js/app.js"></script>
+	<script src="controller/controller.js"></script>
+</head>
+<body>
+	<header class="navbar navbar-default navbar-fixed-top">
+		<h4 class="text-center">{{current.title}}</h4>
+	</header>
+	<div ng-view></div>
+	<footer class="navbar navbar-default navbar-fixed-bottom">
+		<div class="text-center clearfix bottom-nav">
+			<div class="col-xs-4"><a href="#/" ng-class="{active:current.page=='home'}"><i class="glyphicon glyphicon-home"></i>首页</a></div>
+			<div class="col-xs-4"><a href="#/list" ng-class="{active:current.page=='list'}"><i class="glyphicon glyphicon-th-list"></i>列表</a></div>
+			<div class="col-xs-4"><a href="#/player/{{currentId}}" ng-class="{active:current.page=='player'}"><i class="glyphicon glyphicon-play-circle"></i>播放</a></div>
+		</div>
+	</footer>
+</body>
+</html>

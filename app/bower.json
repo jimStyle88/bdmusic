@@ -1,0 +1,27 @@
+{
+  "name": "bdmusic",
+  "authors": [
+    "aaron <jeroo@qq.com>"
+  ],
+  "description": "百度音乐",
+  "main": "",
+  "keywords": [
+    "百度音乐"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="media">
+	  <div class="media-left">
+	      <img class="media-object" src="{{song.pic_big}}" alt="{{song.author}}">
+	  </div>
+	  <div class="media-body">
+	    <h4 class="media-heading">{{song.title}}</h4>
+	    <p>演唱：{{song.author}}</p>
+        <p>发布时间：{{song.publishtime}}</p>
+	    <p>人气：{{song.hot}}</p>
+        <p>语种：{{song.country}}</p>
+        <a href="{{song.lrclink}}" class="btn btn-default btn-xs" target="_blank">下载歌词</a>
+        <a href="{{file.file_link}}" class="btn btn-default btn-xs" target="_blank">下载歌曲</a>
+	  </div>
+	</div>
+    
+    <div class="row">
+        <div class="col-sm-12">
+            <audio ng-src="file.file_link" controls></audio>
+        </div>
+    </div>
+</div>  

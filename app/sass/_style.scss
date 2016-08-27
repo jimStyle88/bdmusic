@@ -1,0 +1,18 @@
+.bottom-nav{padding:2px 0;}
+.bottom-nav{
+	>div{
+		padding:5px 0;border-right:1px solid #efefef;
+		&:last-child{border:none;}
+	}
+	i{display:block;margin:0 auto;font-size:24px;}
+	a{
+		text-decoration: none;
+		&.active{color:#f60;}
+	}
+}
+
+.songs-list{
+	.badge{position:absolute;right:10px;top:10px;}
+	p{margin:5px 0;}
+	.media-object{margin-right:10px;padding:2px;width:60px;height:60px;border-radius:50%;border:1px solid #ccc;}
+}
